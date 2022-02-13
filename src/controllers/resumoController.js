@@ -2,7 +2,7 @@ const { ResumoService } = require('../services');
 
 const resumoService = new ResumoService();
 
-class resumoController {
+class ResumoController {
   static async getResumoMensal(req, res, next) {
     const { ano, mes } = req.params;
 
@@ -14,4 +14,4 @@ class resumoController {
     }
   }
 }
-module.exports = resumoController;
+module.exports = ResumoController;

@@ -36,6 +36,16 @@ class ReceitaService extends BaseServices {
       raw: true,
     });
   }
+
+  async updateIfIdExists(id, modelData, transaction = {}) {
+    const currentData = await this.checkIfIdExists(id);
+
+    if (currentData.descricao !== modelData.descricao) {
+      await this.checkIfExistsInDate(modelData.descricao, modelData.data);
+    }
+
+    return db[this.modelName].update(modelData, { where: { id } }, transaction);
+  }
 }
 
 module.exports = ReceitaService;

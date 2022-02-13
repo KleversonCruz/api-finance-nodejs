@@ -35,6 +35,18 @@ const receitaValidationRules = [
   body('data').isDate().withMessage('É obrigatório e deve ser uma data válida'),
 ];
 
+const usuarioValidationRules = [
+  body('nome')
+    .isLength({ min: 3 })
+    .withMessage('É obrigatório e deve possuir ao menos 3 caracteres'),
+  body('email')
+    .isEmail()
+    .withMessage('É obrigatório e deve ser um e-mail válido'),
+  body('senha')
+    .isLength({ min: 6 })
+    .withMessage('É obrigatório e deve possuir ao menos 6 caracteres'),
+];
+
 const validate = (req, res, next) => {
   const errors = validationResult(req);
   if (errors.isEmpty()) {
@@ -54,5 +66,6 @@ const validate = (req, res, next) => {
 module.exports = {
   despesaValidationRules,
   receitaValidationRules,
+  usuarioValidationRules,
   validate,
 };

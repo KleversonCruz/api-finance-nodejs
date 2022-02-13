@@ -5,6 +5,11 @@ module.exports = {
     storage: './database.sqlite',
     dialect: 'sqlite',
   },
+  test: {
+    storage: './databaseTest.sqlite',
+    dialect: 'sqlite',
+    logging: false,
+  },
   production: {
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,

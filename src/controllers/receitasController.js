@@ -4,7 +4,7 @@ const util = require('../util');
 
 const receitasService = new ReceitasService();
 
-class receitasController {
+class ReceitasController {
   static async getOne(req, res, next) {
     const { id } = req.params;
 
@@ -45,6 +45,8 @@ class receitasController {
     const despesa = new Receita(descricao, valor, data);
 
     try {
+      await receitasService.checkIfExistsInDate(descricao, data);
+
       const novaReceita = await receitasService.create(despesa);
       res.status(201).json(novaReceita);
     } catch (error) {
@@ -58,7 +60,7 @@ class receitasController {
 
     try {
       const despesa = new Receita(descricao, valor, data);
-      await receitasService.update(id, despesa);
+      await receitasService.updateIfIdExists(id, despesa);
       res.status(200).json();
     } catch (error) {
       next(error);
@@ -77,4 +79,4 @@ class receitasController {
   }
 }
 
-module.exports = receitasController;
+module.exports = ReceitasController;
