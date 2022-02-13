@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon --inspect src/app.js",
-    "test": "sequelize-cli db:migrate & sequelize-cli db:seed:all & jest"
+    "test": "jest",
+    "sequelize": "sequelize-cli db:migrate & sequelize-cli db:seed:all"
   },
   "repository": {
     "type": "git",
