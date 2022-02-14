@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
   Receitas.init(
     {
       descricao: DataTypes.STRING,
-      valor: DataTypes.NUMBER,
+      valor: DataTypes.NUMERIC,
       data: DataTypes.DATEONLY,
     },
     {

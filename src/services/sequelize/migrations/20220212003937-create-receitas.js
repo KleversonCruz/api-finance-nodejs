@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       valor: {
-        type: Sequelize.NUMBER
+        type: Sequelize.NUMERIC
       },
       data: {
         type: Sequelize.DATEONLY

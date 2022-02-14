@@ -1,16 +1,17 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
 
+require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
+console.log(`Conectado ao banco de dados de ${env}`);
 const config = require('../../../config/db')[env];
 
 const db = {};
-
 let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
@@ -25,7 +26,8 @@ if (config.use_env_variable) {
 
 fs.readdirSync(__dirname)
   .filter(
-    (file) => file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js',
+    (file) =>
+      file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js',
   )
   .forEach((file) => {
     const model = require(path.join(__dirname, file))(
