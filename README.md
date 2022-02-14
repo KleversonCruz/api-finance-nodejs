@@ -11,7 +11,7 @@ A documentação da API pode ser acessada em: [Documentação Postman](https://d
 
 ### Demonstração
 
-Para acessar a demonstração utilize o link: [api-finance-nodejs.herokuapp.com](api-finance-nodejs.herokuapp.com/) e siga os endpoints disponibilizados pela documentação.
+Para utilizar a demonstração acesse [https://api-finance-nodejs.herokuapp.com/](https://api-finance-nodejs.herokuapp.com/) e siga os endpoints disponibilizados pela documentação.
 
 ### Desenvolvimento
 
