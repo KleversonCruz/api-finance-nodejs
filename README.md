@@ -1,5 +1,5 @@
 <h1 align="center">
-  <p align="center">Financial API</p>
+  <p align="center">api-finance</p>
 </h1>
 
 API REST Desenvolvida para challenger back-end-2 da [Alura]('https://www.alura.com.br/')
