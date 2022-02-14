@@ -1,1 +1,39 @@
-# api-finance-nodejs
+<h1 align="center">
+  <p align="center">Financial API</p>
+</h1>
+
+API REST Desenvolvida para challenger back-end-2 da [Alura]('https://www.alura.com.br/')
+
+
+### Documentação
+
+A documentação da API pode ser acessada em: [Documentação Postman](https://documenter.getpostman.com/view/16890150/UVeNm2w8)
+
+### Demonstração
+
+Para acessar a demonstração utilize o link: [api-finance-nodejs.herokuapp.com](api-finance-nodejs.herokuapp.com/) e siga os endpoints disponibilizados pela documentação.
+
+### Desenvolvimento
+
+
+* 🔵 Autenticação JWT.
+* 🔵 Sequelize ORM.
+* 🔵 Testes com JEST.
+
+### Iniciando localmente
+
+
+```bash
+npm install
+
+npm sequelize
+
+npm run dev
+
+```
+
+Faça as requisições por meio do link [http://localhost:3000](http://localhost:3000) para ver o resultado.
+
+
+
+Fique a vontade para propor melhorias ou sugestões 🥰
