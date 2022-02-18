@@ -31,9 +31,9 @@ Para utilizar a demonstração acesse [https://api-finance-nodejs.herokuapp.com/
 ### Desenvolvimento
 
 
-🔵 Autenticação JWT.
-🔵 Sequelize ORM.
-🔵 Testes com JEST.
+* Autenticação JWT.
+* Sequelize ORM.
+* Testes com JEST.
 
 ### Iniciando localmente
 
