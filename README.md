@@ -20,14 +20,6 @@ Criação de uma API REST para controle de orçamento.
 
 :heavy_check_mark: Testes automatizados de integração.
 
-### Documentação
-
-A documentação da API pode ser acessada em: [Documentação Postman](https://documenter.getpostman.com/view/16890150/UVeNm2w8)
-
-### Demonstração
-
-Para utilizar a demonstração acesse [https://api-finance-nodejs.herokuapp.com/](https://api-finance-nodejs.herokuapp.com/) e siga os endpoints disponibilizados pela documentação.
-
 ### Desenvolvimento
 
 
@@ -47,7 +39,7 @@ npm run dev
 
 ```
 
-Faça as requisições por meio do link [http://localhost:3000](http://localhost:3000) para ver o resultado.
+Faça as requisições por meio das rotas em [http://localhost:3000](http://localhost:3000) para ver o resultado.
 
 
 
